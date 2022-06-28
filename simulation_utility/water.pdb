@@ -1,0 +1,7 @@
+TITLE     WATER
+REMARK    THIS IS A SIMULATION BOX
+CRYST1   36.443   36.443   36.443  90.00  90.00  90.00 P 1           1
+MODEL        1
+ATOM      1  W     W     1      18.221  18.221  18.221  1.00  0.00            
+TER
+ENDMDL

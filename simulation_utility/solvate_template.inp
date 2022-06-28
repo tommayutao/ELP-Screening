@@ -1,0 +1,22 @@
+tolerance 3.0
+filetype pdb
+output bilayer_solvated.pdb
+
+structure bilayer.pdb
+	number 1
+	fixed 0. 0. 0. 0. 0. 0.
+end structure
+
+structure water.pdb
+	number NUM_UP
+	inside box  0. 0. Z_UP_MIN X_MAX Y_MAX Z_UP_MAX
+end structure
+
+structure water.pdb
+	number NUM_LOW
+	inside box 0. 0. Z_LOW_MIN X_MAX Y_MAX Z_LOW_MAX
+end structure
+
+avoid_overlap no
+add_box_sides 1.0
+	
