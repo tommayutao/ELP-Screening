@@ -2,7 +2,6 @@ import numpy as np
 import glob,re,os
 from scipy.stats import norm,kstest,sem
 from scipy.optimize import curve_fit
-import glob,re,os
 
 base_dir = 'simulation_data'
 
@@ -61,8 +60,6 @@ def block_analysis_proj(peptide_name):
 		sub_f = glob.glob('%s/b*'%(f))
 		sub_f.sort(key = lambda x : int(re.findall(r'\d+', x)[-1]))
 		for rua in sub_f:
-			if not os.path.exists('%s/betaF_PROJ_MAP.txt'%(rua)):
-				continue
 			betaG = np.loadtxt('%s/betaF_PROJ_MAP.txt'%(rua))
 			bincenters = np.loadtxt('%s/hist_binCenters_PROJ.txt'%(rua))
 			idx = np.isfinite(betaG)

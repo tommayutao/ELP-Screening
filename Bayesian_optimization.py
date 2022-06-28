@@ -1,9 +1,7 @@
 from compute_dG import *
-import pickle,os,copy
+import pickle,os,copy,shutil
 import numpy as np
 from scipy.stats import norm
-import random
-import shutil
 from sklearn.model_selection import LeaveOneOut
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.metrics import r2_score

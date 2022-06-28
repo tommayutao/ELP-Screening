@@ -5,9 +5,6 @@ High-throughput screening of elastin-like polypeptides for the self-assembly of 
 ### simulation_utility
 Contains codes to perform MD, umbrella sampling and WHAM to estimate free energy of association of pre-assembled vesicle.
 
-### simulation_data
-Contains example simulation data for (VPGYG)5(VPGCG)4 system.
-
 ### GS_cpp
 Contains C++ implementation of generic string kernel proposed by Giguère et al.[[1]](#1)
 
